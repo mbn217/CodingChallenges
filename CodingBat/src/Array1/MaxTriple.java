@@ -29,7 +29,7 @@ public class MaxTriple {
 		if(nums.length==1) return nums[0];
 		for (int i = 0; i < nums.length-1; i++) {
 		
-			if (swapped <= nums[i]) swapped = nums[i];
+			if (swapped < nums[i+1]) swapped = nums[i+1];
 		}
 		
 		
